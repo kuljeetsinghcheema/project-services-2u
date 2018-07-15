@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Park Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="colorful.css">
+  <link rel="stylesheet" href="model.css">
+  <script src="model.js"></script>
+  <script src="js/navbar-ontop.js"></script>
+
+
+</head>
+
+<body>
+  <nav class=" navbar-expand-md fixed-top navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <b>Parking Like Never Before</b>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar3SupportedContent" aria-controls="navbar3SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar3SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#what">What</a>
+          </li>
+          <li class="nav-item mx-2 mb-2 my-md-0">
+            <a class="nav-link" href="#who">Who</a>
+          </li>
+        </ul>
+        <a class="btn navbar-btn btn-outline-light" href="#where">Where</a>
+      </div>
+    </div>
+  </nav>
+
+  <div style="margin-top:80px">
+  <hr>
+  <div class="row">
+  <div class="col-md-4 ">
+  <div class="" style="margin:20px;border:solid black 2px;width:50%;height:200px">
+  <img src="./images/Places-user-identity-icon.png" style="width:100%;height:200px">
+  </div>
+  </div>
+  <div class="col-md-4" >
+  <div class="" style="margin:20px;">
+  <p>Name:</p>
+  <p>Car Plate Number:<strong><?php echo $_SESSION['username']; ?></strong></p>
+  <p>Make And Model:</p>
+  <p>Date in:</p><input type="date" name="t1">
+  <p>Time in:</p><input type="time" name="t2">
+  </div>
+  </div>
+  <div class="col-md-4" >
+  <div class="" style="margin:10px;">
+  <h4 class="text-success">Available</h4>
+  <h4 class="text-danger">Not Available</h4>
+
+  </div>
+  </div>
+  </div>
+  <div class="text-right"><button class="btn " type="submit" style="background-color:black;color:white">Submit<href = "submitted.php"></button></div>
+</div>
+
+
+  <script>
+
+  document.getElementById("btn").onclick = function () {
+          location.href = "submitted.php";
+      };
+
+  </script>
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="js/smooth-scroll.js"></script>
+
+</body>
+
+</html>
